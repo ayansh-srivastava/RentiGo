@@ -1,0 +1,70 @@
+User model
+
+{
+  _id: ObjectId,
+  name: String,
+  email: String,
+  password: String,
+  phone: String,
+  isOwner: Boolean,
+  createdAt: Date,
+  updatedAt: Date
+}
+
+Car model
+
+{
+  _id: ObjectId,
+  name: String,
+  brand: String,
+  model: String,
+  year: Number,
+  city: String,
+  pricePerDay: Number,
+  capacity: Number,
+  fuelType: ENUM,
+  features: [String],
+  description: String,
+  transmission: ENUM, // Automatic / Manual
+  images: [String], 
+  listedBy: ObjectId, // ref to User (owner)
+  isAvailable: Boolean,
+  createdAt: Date,
+  updatedAt: Date
+}
+
+Booking model
+
+{
+  _id: ObjectId,
+  user: ObjectId, // ref to User
+  car: ObjectId, // ref to Car
+  pickupDate: Date,
+  returnDate: Date,
+  totalPrice: Number,
+  status: ENUM, // e.g., pending, confirmed, cancelled, completed
+  createdAt: Date,
+  updatedAt: Date
+}
+
+Review model
+
+{
+  _id: ObjectId,
+  car: ObjectId, // ref to Car
+  user: ObjectId, // ref to User
+  rating: Number, // 1 to 5
+  reviewText: String,
+  createdAt: Date
+}
+
+Owner model
+
+{
+  _id: ObjectId,
+  userId: ObjectId, // ref to User
+  licenseNumber: String,
+  carsListed: [ObjectId], // ref to cars
+  earnings: Number,
+  joinedAt: Date
+}
