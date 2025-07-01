@@ -1,5 +1,6 @@
 import React from 'react';
 import CarCard from './CarCard';
+import Title from './Title';
 import card1 from '../assets/card1.png';
 import card2 from '../assets/card2.png';
 import card3 from '../assets/card3.png';
@@ -7,9 +8,11 @@ import luxuryCar from '../assets/luxuryCar.png';
 const FeaturedVehicles = () => {
   return (
     <div className="py-12 px-6 text-center">
-      <h1 className="text-3xl font-bold text-gray-800 mb-2">Featured Vehicles</h1>
-      <p className="text-gray-600 mb-8">Explore our most popular vehicles.</p>
-
+      <Title 
+        title="Featured Vehicles" 
+        description="Explore our most popular vehicles" 
+      />
+      
       <div className="flex flex-wrap justify-center gap-6">
         <CarCard
           img={card1}

@@ -1,10 +1,11 @@
 import React from 'react'
-
+import Title from './Title'
 const Subscibtion = () => {
   return (
     <div>
-        <h1 className="text-3xl font-bold mb-4 text-center mt-14">Never miss a deal</h1>
-        <p className="text-gray-400 text-center mb-8">Subscribe to get the latest offers, greatest discounts and new collections before anyone else.</p>
+        <Title title="Never miss a deal"
+               description="Subscribe to get the latest offers, greatest discounts and new collections before anyone else."
+        />
         <div className="flex justify-center items-center h-40">
         <div className="flex flex-col sm:flex-row items-center gap-4">
             <input
