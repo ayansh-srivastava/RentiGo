@@ -41,10 +41,13 @@ Booking model
   car: ObjectId, // ref to Car
   pickupDate: Date,
   returnDate: Date,
+  pickupLocation: String,
+  dropLocation: String,
   totalPrice: Number,
   status: ENUM, // e.g., pending, confirmed, cancelled, completed
   createdAt: Date,
-  updatedAt: Date
+  updatedAt: Date,
+  owner: ObjectId //ref to Owner
 }
 
 Review model

@@ -41,7 +41,6 @@ const Cars = () => {
         {/* Render filtered cars here */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {cars.map((car) => (
-            console.log(car),
             <CarCard key={car.id} {...car} />
           ))}
         </div>

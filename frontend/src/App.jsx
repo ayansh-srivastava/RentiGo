@@ -5,6 +5,7 @@ import Cars from './pages/Cars'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/Footer';
 import Home from './pages/home';
+import My_Bookings from './pages/My_Bookings'
 const App = () => {
   const isOwner = useLocation().pathname === '/owner';
   return (
@@ -13,7 +14,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/cars" element={<Cars/>} />
-      <Route path="/my-bookings" element={<div>My Bookings Page</div>} />
+      <Route path="/my-bookings" element={<My_Bookings/>} />
       <Route path="/car-details/:id" element={<Car_Details />} />
       <Route path="/owner" element={<div>Owner Dashboard</div>} />
     </Routes>
