@@ -20,7 +20,7 @@ const Car_Details = () => {
   
 
 
-  const car = dummyData.cars.find(car => car.id === parseInt(id));
+  const car = dummyData.cars.find(car => car._id === parseInt(id));
 
   if (!car) return <p className="text-center text-red-600">Car not found.</p>;
 

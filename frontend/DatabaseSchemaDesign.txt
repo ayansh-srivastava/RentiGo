@@ -4,6 +4,7 @@ User model
   _id: ObjectId,
   name: String,
   email: String,
+  img: String,
   password: String,
   phone: String,
   isOwner: Boolean,
@@ -20,6 +21,7 @@ Car model
   model: String,
   year: Number,
   city: String,
+  plateNumber: String,
   pricePerDay: Number,
   capacity: Number,
   fuelType: ENUM,
@@ -66,8 +68,7 @@ Owner model
 {
   _id: ObjectId,
   userId: ObjectId, // ref to User
-  licenseNumber: String,
+  verificationNumber: String,
   carsListed: [ObjectId], // ref to cars
-  earnings: Number,
   joinedAt: Date
 }
