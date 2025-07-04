@@ -3,8 +3,7 @@ import Hero from '../components/Hero.jsx'
 import FeaturedVehicles from '../components/FeaturedVehicles.jsx'
 import luxuryCar from '../assets/luxuryCar.png'
 import CustomerReviews from '../components/CustomerReviews.jsx'
-import Subscibtion from '../components/subscibtion.jsx'
-import Footer from '../components/Footer.jsx'
+import Subscibtion from '../components/Subscibtion.jsx'
 const Home = () => {
   return (<>
     <Hero></Hero>

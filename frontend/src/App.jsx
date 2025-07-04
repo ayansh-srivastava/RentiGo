@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 import Car_Details from './pages/Car_Details'
 import Cars from './pages/Cars'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/Footer';
-import Home from './pages/home';
+import Home from './pages/Home';
 import My_Bookings from './pages/My_Bookings'
 import Layout from './pages/owner/Layout'
 import Profile from './pages/owner/Profile'

@@ -5,7 +5,7 @@ import calendar from '../assets/calendar.png';
 import person from '../assets/person.png';
 
 const BookingCard = ({ _id, car: carId, pickupDate, returnDate, totalPrice, status, createdAt, owner: ownerId }) => {
-  const car   = dummyData.cars.find(c => c.id === carId);
+  const car   = dummyData.cars.find(c => c._id === carId);
   const owner = dummyData.users.find(u => u._id === ownerId);
 
   const getStatusColor = s => ({
@@ -22,7 +22,7 @@ const BookingCard = ({ _id, car: carId, pickupDate, returnDate, totalPrice, stat
         {/* Col 1: Car */}
         <div className="flex-row items-start gap-4">
           <img
-            src={car?.img}
+            src={car?.images?.[0]}
             alt={car?.name}
             className="w-60 h-40 object-cover rounded-lg"
           />

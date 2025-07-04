@@ -10,7 +10,7 @@ const CarCard = (props) => {
     <div className="bg-white rounded-2xl shadow-md overflow-hidden w-full max-w-sm transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl" onClick={() => navigate(`/car-details/${props.id}`)}>
       <div className="relative">
         <img
-          src={props.img}
+          src={props.images?.[0]}
           alt={props.name}
           className="w-full h-48 sm:h-56 md:h-64 object-cover"
         />
