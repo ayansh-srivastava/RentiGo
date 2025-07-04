@@ -15,7 +15,7 @@ const FeaturedVehicles = () => {
       
       <div className="flex flex-wrap justify-center gap-6">
         <CarCard
-          img={card1}
+          images={[card1]}
           id="1"
           name="Toyota Corolla"
           model="2022"
@@ -26,7 +26,7 @@ const FeaturedVehicles = () => {
           city="New York"
         />
         <CarCard
-          img={card2}
+          images={[card2]}
           id="2"
           name="Honda Civic"
           model="2021"
@@ -37,7 +37,7 @@ const FeaturedVehicles = () => {
           city="Los Angeles"
         />
         <CarCard
-          img={card3}
+          images={[card3]}
           id="3"
           name="Ford Focus"
           model="2020"

@@ -81,7 +81,7 @@ const dummyData = {
       description: "Spacious SUV ideal for long drives.",
       transmission: "Automatic",
       images: [mainCar],
-      listedBy: 4,
+      listedBy: 2,
       isAvailable: true,
       createdAt: new Date("2025-06-08"),
       updatedAt: new Date("2025-06-28"),
